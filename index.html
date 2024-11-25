@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1
+
+        // const calculator = () => {
+           
+        //     while(true){
+        //         let num1 = +prompt("Enter san1");
+        //         let calc = prompt("Enter + | - | / | *") 
+        //         let num2 = +prompt("Enter san2")
+        //         switch (calc) {
+        //             case "+":
+        //                     alert(num1 + num2);
+        //             return;
+        //             case "-":
+        //                     alert(num1 - num2);
+        //             return;
+        //             case "/":
+        //                     alert(num1 / num2);
+        //             return;
+        //             case "*":
+        //                     alert(num1 * num2);
+        //             return;
+                
+        //             default:
+        //                 alert("Кате тек \n + | - | / | *")
+        //         }
+        //     }
+        // }
+
+        // console.log(calculator())
+
+        // 2
+
+        // const fact = () => {
+        //     let total = +prompt("Enter you total money")
+        //     let colvo = +prompt("Enter colvo product")
+        //     let result = total * colvo
+        //     let contract = 0;
+
+        //     if (result >= 0 && 5000 > result){
+        //         alert(`You will not receive a discount on this product ${result}`)
+        //     }
+
+        //     if (result >= 5000 && 10000 > result){
+        //         result -= result / 10
+        //         alert(`You will receive a 10% discount on this product ${result}`)
+        //     }
+            
+        //     if (result >= 10000 && 20000 > result){
+        //         result -= result / 20
+        //         alert(`You will receive a 20% discount on this product ${result}`)
+        //     }
+            
+        //     if (result >= 20000 && Infinity > result){
+        //         result -= result / 30
+        //         alert(`You will receive a 30% discount on this product ${result}`)
+        //     }   
+        // }
+        // console.log(fact())
+
+
+        const random = () => {
+            let oi_san = 65
+            
+            while(true){
+            let san = +prompt("enter san")
+                
+            if (san === oi_san) {
+                 alert("durys")
+                return;
+            } else if (san<59 && san > 71) {
+                 alert("sal tomen")
+            } else if (san < 59 && san >= 71) {
+           alert("sal ulken")
+            }   else if (san >= 70 ) {
+                alert("tomen")
+           } else if (san <= 60) {
+                alert("zhogary")
+        }
+            }
+    }
+
+        console.log(random())
+
+        // Bonus tasks 
+
+        const bonus = () => {
+            let a = 20;
+            let b = 15;
+            let r;
+
+            r = a
+            a = "a " + b
+            b = "b " + r
+            return {a, b}
+        }
+        console.log(bonus())
+        
+
+        
+    </script>
+</body>
+</html>
